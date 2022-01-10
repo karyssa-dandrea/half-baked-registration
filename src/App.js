@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom/cjs/react-router-dom';
 import SignIn from './views/Auth/SignIn';
+import SignUp from './views/Auth/SignUp';
 import { useState } from 'react';
 import { getUser } from './services/users';
 
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route path="/signin" exact>
             <SignIn />
+          </Route>
+          <Route path="/signup" exact>
+            <SignUp />
           </Route>
           <Route path="/">
             {currentUser && <h1>I am signed in!</h1>}

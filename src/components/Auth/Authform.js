@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Authform({ email, setEmail, password, setPassword }) {
+export default function Authform({ email, setEmail, password, setPassword, submitButton }) {
   return (
     <div classNam="form">
       <h1>Log In or Sign Up!</h1>
@@ -21,6 +21,9 @@ export default function Authform({ email, setEmail, password, setPassword }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+      </div>
+      <div className="button">
+        <button onClick={submitButton}>Save</button>
       </div>
     </div>
   );
