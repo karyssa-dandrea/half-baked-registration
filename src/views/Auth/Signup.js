@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Authform from '../../components/Auth/Authform';
+import Header from '../../components/Header/Header';
 import { signupUser } from '../../services/users';
 
 export default function Signup() {
@@ -20,11 +21,12 @@ export default function Signup() {
   return (
     <div>
       <h1> Sign-Up:</h1>
+      <Header />
       <Authform
         email={email}
         password={password}
         setEmail={setEmail}
-        setpassword={setPassword}
+        setPassword={setPassword}
         errorMessage={errorMessage}
         submitButton={submitButton}
       />
