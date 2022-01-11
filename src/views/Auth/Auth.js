@@ -49,7 +49,7 @@ export default function Auth({ setCurrentUser }) {
       <p> Type: {type}</p>
       <Authform
         password={password}
-        emal={email}
+        email={email}
         setPassword={setPassword}
         setEmail={setEmail}
         errorMessage={errorMessage}
